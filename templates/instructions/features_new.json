@@ -1,0 +1,54 @@
+{
+  "handlers":{
+    "MinCellSize": {
+      "source":"github_defaults",
+      "path": "MinCellSize.R"
+    },
+    "ATE": {
+      "source":"github_defaults",
+      "github": "ATE.R"
+    },
+    "OF": {
+      "source":"github_defaults",
+      "github": "OF.R"
+    },
+    "RD": {
+      "source":"github_defaults",
+      "github": "RD.R"
+    },
+    "MinTxProp": {
+      "source":"github_defaults",
+      "github": "MinTxProp.R"
+    },
+    "Conf": {
+      "source":"github_defaults",
+      "github": "Conf.R"
+    }
+  },
+  "features":{
+    "MinCellSize": {
+      "handler": "MinCellSize",
+      "options": {}
+    },
+    "ATE": {
+      "handler": "ATE",
+      "options": {}
+    },
+    "OF": {
+      "handler": "OF",
+      "options": {}
+    },
+    "RD": {
+      "handler": "RD",
+      "options": {}
+    },
+    "MinTxProp": {
+      "handler": "MinTxProp",
+      "options": {}
+    },
+    "Conf": {
+      "handler": "Conf",
+      "options": {}
+    }
+  }
+}

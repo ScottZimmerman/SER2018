@@ -1,0 +1,23 @@
+{
+  "type": "featureSearch",
+  "targets":{
+		"OF": {
+            "value": 0.3
+        },
+        "ATE": {
+            "value": 0.1
+        },
+        "Conf": {
+            "value": 0.1
+        },
+        "RD": {
+            "value": 0.2
+        },
+        "MinTxProp": {
+            "value": 0.05
+        },
+        "MinCellSize": {
+            "value": 0.01
+        }
+  }
+}

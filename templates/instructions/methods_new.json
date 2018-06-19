@@ -1,0 +1,55 @@
+{
+  "options":{
+    "models":{
+      "Q": {
+        "Q0": "A+W1+W2"
+      },
+      "g": {
+        "g0": "W1+W2"
+      }
+    }
+  },
+  "handlers":{
+    "gComp":{
+      "source":"github_default",
+      "path": "gComp_binaryAY.R"
+    },
+    "IPTW":{
+      "source":"github_default",
+      "path": "IPTW_binaryAY.R"
+    },
+    "TMLE":{
+      "source":"github_default",
+      "path": "TMLE_binaryAY.R"
+    },
+    "unadjusted":{
+      "source":"github_default",
+      "path":"unadjusted_binaryAY.R"
+    }
+  },
+  "methods":{
+    "gComp_1": {
+      "handler": "gComp",
+      "options": {
+        "Q": "Q0"
+      }
+    },
+    "IPTW_1": {
+      "handler": "IPTW",
+      "options": {
+        "g": "g0"
+      }
+    },
+    "unadjusted": {
+      "handler": "unadjusted",
+      "options": {}
+    },
+    "TMLE_1": {
+      "handler": "TMLE",
+      "options": {
+        "Q": "Q0",
+        "g": "g0"
+      }
+    }
+  }
+}

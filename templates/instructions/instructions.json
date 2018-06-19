@@ -1,0 +1,125 @@
+{
+    "DAG": {
+        "parents": {
+            "A": [
+                "W1", 
+                "W2"
+            ], 
+            "Y": [
+                "W1", 
+                "W2", 
+                "A"
+            ], 
+            "W2": [], 
+            "W1": []
+        }, 
+        "fullTopoOrder": [
+            "W1", 
+            "W2", 
+            "A", 
+            "Y"
+        ], 
+        "posVals": {
+            "A": [
+                0, 
+                1
+            ], 
+            "Y": [
+                0, 
+                1
+            ], 
+            "W2": [
+                0, 
+                1
+            ], 
+            "W1": [
+                0, 
+                1
+            ]
+        }
+    }, 
+    "features": {
+        "MinCellSize": {
+            "handler": "MinCellSize", 
+            "options": {}, 
+            "github": "MinCellSize.R"
+        }, 
+        "ATE": {
+            "handler": "ATE", 
+            "options": {}, 
+            "github": "ATE.R"
+        }, 
+        "OF": {
+            "handler": "OF", 
+            "options": {}, 
+            "github": "OF.R"
+        }, 
+        "RD": {
+            "handler": "RD", 
+            "options": {}, 
+            "github": "RD.R"
+        }, 
+        "MinTxProp": {
+            "handler": "MinTxProp", 
+            "options": {}, 
+            "github": "MinTxProp.R"
+        }, 
+        "Conf": {
+            "handler": "Conf", 
+            "options": {}, 
+            "github": "Conf.R"
+        }
+    }, 
+    "models": {
+        "Q": {
+            "Q0": "A+W1+W2"
+        }, 
+        "g": {
+            "g0": "W1+W2"
+        }
+    }, 
+    "TargetParameter": {
+        "outcome": "Y", 
+        "type": "ATE", 
+        "exposure": "A"
+    }, 
+    "options": {
+        "nEstimateReps": 100, 
+        "nFeatureSearchReps_max": 10, 
+        "featureRepUploadInterval": 20, 
+        "sampleSize": 1000, 
+        "probMode": "JD", 
+        "nFeaturesReps": 20, 
+        "maxReps_featureDist": 100, 
+        "startFeatureImportanceIndex": 100
+    }, 
+    "methods": {
+        "gComp_1": {
+            "handler": "gComp", 
+            "options": {
+                "Q": "Q0"
+            }, 
+            "github": "gComp_binaryAY.R"
+        }, 
+        "IPTW_1": {
+            "handler": "IPTW", 
+            "options": {
+                "g": "g0"
+            }, 
+            "github": "IPTW_binaryAY.R"
+        }, 
+        "unadjusted": {
+            "handler": "unadjusted", 
+            "options": {}, 
+            "github": "unadjusted_binaryAY.R"
+        }, 
+        "TMLE_1": {
+            "handler": "TMLE", 
+            "options": {
+                "Q": "Q0", 
+                "g": "g0"
+            }, 
+            "github": "TMLE_binaryAY.R"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "MinCellSize": {
+      "handler": "MinCellSize",
+      "options": {},
+      "github": "MinCellSize.R"
+    },
+    "ATE": {
+      "handler": "ATE",
+      "options": {},
+      "github": "ATE.R"
+    },
+    "OF": {
+      "handler": "OF",
+      "options": {},
+      "github": "OF.R"
+    },
+    "RD": {
+      "handler": "RD",
+      "options": {},
+      "github": "RD.R"
+    },
+    "MinTxProp": {
+      "handler": "MinTxProp",
+      "options": {},
+      "github": "MinTxProp.R"
+    },
+    "Conf": {
+      "handler": "Conf",
+      "options": {},
+      "github": "Conf.R"
+    }
+  }

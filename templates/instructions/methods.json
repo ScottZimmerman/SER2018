@@ -1,0 +1,29 @@
+{
+  "gComp_1": {
+    "handler": "gComp",
+    "options": {
+      "Q": "Q0"
+    },
+    "github": "gComp_binaryAY.R"
+  },
+  "IPTW_1": {
+    "handler": "IPTW",
+    "options": {
+      "g": "g0"
+    },
+    "github": "IPTW_binaryAY.R"
+  },
+  "unadjusted": {
+    "handler": "unadjusted",
+    "options": {},
+    "github": "unadjusted_binaryAY.R"
+  },
+  "TMLE_1": {
+    "handler": "TMLE",
+    "options": {
+      "Q": "Q0",
+      "g": "g0"
+    },
+    "github": "TMLE_binaryAY.R"
+  }
+}

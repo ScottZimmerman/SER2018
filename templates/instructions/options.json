@@ -1,0 +1,10 @@
+{
+	"nEstimateReps": 100,
+	"nFeatureSearchReps_max": 10,
+	"featureRepUploadInterval": 20,
+	"sampleSize": 1000,
+	"probMode": "JD",
+	"nFeaturesReps": 20,
+	"maxReps_featureDist": 100,
+	"startFeatureImportanceIndex": 100
+}

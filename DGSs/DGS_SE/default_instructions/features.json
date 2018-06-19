@@ -1,0 +1,30 @@
+{
+  "handlers":{
+    "interaction": {
+      "source":"local",
+      "path": "interaction.R"
+    },
+    "medianIncome": {
+      "source":"local",
+      "path": "medianIncome.R"
+    },
+    "unitIncreaseTreatmentEffect": {
+      "source":"local",
+      "path": "unitIncreaseTreatmentEffect.R"
+    }
+  },
+  "features":{
+    "interaction": {
+      "handler": "interaction",
+      "options": {}
+    },
+    "medianIncome": {
+      "handler": "medianIncome",
+      "options": {}
+    },
+    "unitIncreaseTreatmentEffect": {
+      "handler": "unitIncreaseTreatmentEffect",
+      "options": {}
+    }
+  }
+}

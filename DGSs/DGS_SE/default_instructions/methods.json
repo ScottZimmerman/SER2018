@@ -1,0 +1,26 @@
+{
+  "options":{
+  },
+  "handlers":{
+    "glm":{
+      "source":"local",
+      "path": "glm.R"
+    }
+  },
+  "methods":{
+    "main_terms": {
+      "handler": "glm",
+      "options": {
+        "exposure":"violence",
+        "model": "depression~income+violence"
+      }
+    },
+    "interaction": {
+      "handler": "glm",
+      "options": {
+        "exposure":"violence",
+        "model": "depression~income+violence+income*violence"
+      }
+    }
+  }
+}

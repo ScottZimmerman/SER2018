@@ -1,0 +1,19 @@
+Remove mongo altogether, using s3 instead
+
+dag fullTopoOrder calculation?
+
+remove UI from features
+
+test pulling github files from other repos
+
+-libraries needed
+
+Simulate.R setupdesignhandlers and setupmodelhandlers
+
+remove samplefromBN
+
+capitalization of TargetParameter and DAG should be lower case
+
+move Function_Downloads to scenario folders
+
+-Fix studysim resource to handle undefined as local... will need to set up on cloud version

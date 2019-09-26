@@ -1,9 +1,6 @@
 
 ![Poster Image](https://github.com/ScottZimmerman/SER2018/blob/master/SER_2018_Poster.png)
 
-# Important!
-This project is undergoing frequent updates during June 2018 as we finish testing additional features and generalizations that will make the code easier to use. Star this repo and check back often! 
-
 # Overview
 This walkthrough details the steps for running the jobs outlined in the poster above. There are three types of jobs: Feature distribution, feature importance and feature search jobs. 
 
@@ -328,9 +325,3 @@ To run a simulation job, open a command line terminal in the simulator base dire
 ```
 
 For feature importance jobs, run Compile_Results.R and Analyze_results.R after running the job. For feature search jobs, run Plot_FS_Results.R after running the job.
-
-# Walkthrough using your own data-generating system (COMING SOON)
-COMING SOON!
-
-# Running simulations in the cloud
-COMING SOON!

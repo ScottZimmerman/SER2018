@@ -6,7 +6,7 @@ This walkthrough details the steps for running the jobs outlined in the poster a
 
 # Walkthrough Using the Default Simulation Method
 ## Step 0: Set up a new scenario
-A scenario will contain all of the data for a single set of simulation instructions. Each scenario is contained in a single folder in ./data/
+A scenario will contain all of the data for a single set of simulation instructions. Each scenario is contained in a single folder in ./data/ (You may need to create this directory if it doesn't exist).
 
 To set up the directory structure needed for a new scenario, open a command line terminal in the base directory and run the following command, replacing <scenario_name> with a unique name for the scenario:
 

@@ -326,7 +326,7 @@ To run a simulation job, open a command line terminal in the simulator base dire
 
 For feature importance jobs, run Compile_Results.R and Analyze_results.R after running the job. For feature search jobs, run Plot_FS_Results.R after running the job.
 
-Mac Troubleshooting: If, first [install homebrew](https://brew.sh/) and then use:
+Mac Troubleshooting: If you get the message "'wget' call had nonzero exit status", first [install homebrew](https://brew.sh/) and then use:
 ```
 brew install wget
 ```
